@@ -1,292 +1,514 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Don Alejandro Mendoza Rodríguez | Habanos artesanales</title>
     <meta
       name="description"
-      content="Puros Habanos hechos a mano en Cuba. Reserva la edición especial de Don Alejandro con 50% de descuento."
+      content="Reserve authentic Cuban Habanos selected by Sergey Volkov through his Cuban connection with Don Alejandro. Limited 50% offer for Russia."
     />
+    <title>Sergey Volkov | Authentic Cuban Habanos for Russia</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="hero">
-        <div class="hero__media">
-          <!-- Reemplaza esta imagen por la foto principal definitiva del maestro si lo deseas. -->
+    <a class="skip-link" href="#reserve">Skip to reservation</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Sergey Volkov Habanos">
+        <span class="brand__mark">SV</span>
+        <span>Sergey Volkov</span>
+      </a>
+      <nav class="site-nav" aria-label="Landing page sections">
+        <a href="#sergey">Sergey</a>
+        <a href="#connection">Cuba</a>
+        <a href="#experience">Habanos</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+      <a class="nav-cta" href="#reserve">Reserve Your Box</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__background" aria-hidden="true">
           <img
-            src="assets/don-alejandro-hero.jpg"
-            alt="Don Alejandro Mendoza Rodríguez en su taller artesanal de tabaco en Cuba"
+            src="assets/sergey-alejandro-havana-capitol.jpg"
+            alt=""
+            fetchpriority="high"
           />
         </div>
-
-        <div class="hero__content">
-          <p class="hero__eyeline">Don Alejandro Mendoza Rodríguez</p>
-          <h1>Puros Habanos hechos a mano en Cuba</h1>
-          <p class="hero__subtitle">
-            Una edición especial de Don Alejandro con 50% de descuento por
-            tiempo limitado
+        <div class="hero__content reveal">
+          <h1 id="hero-title">
+            Authentic Cuban Habanos Directly From Cuba To Russia
+          </h1>
+          <p class="hero__subhead">
+            Personally selected by Sergey Volkov and supplied through his direct
+            relationship with Cuban cigar expert Don Alejandro.
           </p>
 
-          <div class="price-card" aria-label="Oferta especial">
-            <div>
-              <span>Precio especial</span>
+          <div class="offer-panel" aria-label="Limited offer">
+            <div class="price-stack">
+              <span>Original Price</span>
+              <strong class="price-stack__old">$98</strong>
+            </div>
+            <div class="price-stack price-stack--current">
+              <span>Current Price</span>
               <strong>$49</strong>
             </div>
-            <div>
-              <span>Precio regular</span>
-              <strong class="price-card__regular">$98</strong>
-            </div>
-            <div>
-              <span>Descuento</span>
-              <strong class="price-card__accent">50%</strong>
-            </div>
+            <div class="save-badge">Save 50%</div>
           </div>
 
-          <a class="button button--primary" href="#reserva">
-            Reservar mi caja ahora
-          </a>
-
-          <p class="hero__disclaimer">
-            Solo para mayores de edad. El consumo de tabaco es perjudicial para
-            la salud.
-          </p>
+          <div class="hero__actions">
+            <a class="button button--gold" href="#reserve">Reserve Your Box</a>
+            <div class="countdown" aria-label="Offer countdown">
+              <span>Offer closes in</span>
+              <strong id="countdown-timer">--:--:--</strong>
+            </div>
+          </div>
         </div>
-      </header>
+      </section>
 
-      <main>
-        <section class="trust section">
-          <div class="section-heading">
-            <span class="section-heading__line"></span>
-            <p>Hecho con oficio, paciencia y tradición cubana</p>
-          </div>
+      <section class="trust-band reveal" aria-label="Trust indicators">
+        <div class="trust-item">Handmade in Cuba</div>
+        <div class="trust-item">Authentic Habanos</div>
+        <div class="trust-item">Quality personally guaranteed</div>
+        <div class="trust-item">Direct Cuban sourcing</div>
+        <div class="trust-item">Limited availability</div>
+        <div class="trust-item">Expert guidance included</div>
+      </section>
 
-          <div class="trust-grid">
-            <article class="trust-card">
-              <strong>Más de 40 años trabajando con tabaco</strong>
-            </article>
-            <article class="trust-card">
-              <strong>Hechos a mano en Cuba</strong>
-            </article>
-            <article class="trust-card">
-              <strong>Tabaco seleccionado</strong>
-            </article>
-            <article class="trust-card">
-              <strong>Producción artesanal limitada</strong>
-            </article>
-            <article class="trust-card">
-              <strong>Garantía personal de Don Alejandro</strong>
-            </article>
-          </div>
-        </section>
+      <section class="section section--split" id="sergey">
+        <div class="portrait-frame reveal">
+          <img
+            src="assets/sergey-volkov-portrait.jpg"
+            alt="Sergey Volkov in a cigar room"
+            loading="lazy"
+          />
+        </div>
+        <div class="section-copy reveal">
+          <p class="section-label">Meet Sergey Volkov</p>
+          <h2>Russia's private gateway to Cuban cigar culture.</h2>
+          <p>
+            Sergey Volkov has spent more than 25 years studying Cuban cigar
+            culture. Born in Russia and deeply connected to Cuba through family
+            ties, Sergey became one of the country's most respected cigar
+            specialists.
+          </p>
+          <p>
+            Unlike ordinary retailers, Sergey works directly with Don Alejandro,
+            a Cuban cigar expert who has spent decades inside the tobacco world.
+            Through this unique relationship, Sergey gains access to authentic
+            knowledge, cigar selection expertise and direct sourcing
+            opportunities unavailable to most sellers.
+          </p>
+          <p class="mission">
+            His mission is simple: to bring authentic Cuban cigar culture to
+            Russian enthusiasts.
+          </p>
 
-        <section class="story section">
-          <div class="story__copy">
-            <h2>La historia de Don Alejandro</h2>
-            <p>
-              Don Alejandro nació cerca de las plantaciones de tabaco de Pinar
-              del Río, Cuba. Desde niño aprendió a seleccionar, secar y
-              trabajar las hojas de tabaco junto a su familia. A los 17 años
-              hizo su primer puro a mano. Hoy, después de más de 40 años de
-              experiencia, continúa elaborando Habanos artesanales siguiendo las
-              tradiciones cubanas transmitidas de generación en generación.
-            </p>
-          </div>
-          <aside class="story__panel">
-            <p>Selección precisa</p>
-            <p>Fermentación tradicional</p>
-            <p>Torcido manual</p>
-            <p>Control personal de calidad</p>
-          </aside>
-        </section>
+          <ol class="timeline" aria-label="Sergey Volkov professional timeline">
+            <li>
+              <span>1999</span>
+              <strong>First serious study of Cuban cigar traditions.</strong>
+            </li>
+            <li>
+              <span>2008</span>
+              <strong>Private tastings and collector guidance in Russia.</strong>
+            </li>
+            <li>
+              <span>2016</span>
+              <strong>Direct relationship with Don Alejandro in Cuba.</strong>
+            </li>
+            <li>
+              <span>Today</span>
+              <strong>Curated Habanos access for a limited Russian circle.</strong>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        <section class="product section">
-          <div class="section-intro">
-            <h2>¿Qué recibirás?</h2>
-            <p>
-              Una caja con puros elaborados a mano, tabaco cubano seleccionado,
-              aroma profundo y equilibrado, ideal para momentos especiales, con
-              producción limitada, empaque elegante y precio promocional de
-              $49 en lugar de $98.
-            </p>
-          </div>
+      <section class="section connection" id="connection">
+        <div class="section-heading reveal">
+          <p class="section-label">The Cuban Connection</p>
+          <h2>A living bridge between Havana knowledge and Russian collectors.</h2>
+        </div>
 
-          <div class="gallery-grid" aria-label="Galería del producto">
-            <!-- Sustituye cada placeholder por una imagen real manteniendo el mismo orden visual. -->
-            <article class="placeholder-card placeholder-card--photo placeholder-card--large">
-              <img
-                class="placeholder-card__image"
-                src="assets/caja-habanos-abierta.jpg"
-                alt="Caja de Habanos abierta con puros dentro"
-              />
-            </article>
-            <article class="placeholder-card placeholder-card--photo">
-              <img
-                class="placeholder-card__image"
-                src="assets/puros-madera-calida.jpg"
-                alt="Puros cubanos colocados sobre una mesa de madera con luz cálida"
-              />
-            </article>
-            <article class="placeholder-card placeholder-card--photo">
-              <img
-                class="placeholder-card__image"
-                src="assets/textura-tabaco-tostado.jpg"
-                alt="Primer plano de hojas de tabaco con textura natural y tonos tostados"
-              />
-            </article>
-            <article class="placeholder-card placeholder-card--photo">
-              <img
-                class="placeholder-card__image"
-                src="assets/don-alejandro-puro-taller.jpg"
-                alt="Don Alejandro mostrando un puro terminado en su taller artesanal"
-              />
-            </article>
-            <article class="placeholder-card placeholder-card--photo">
-              <img
-                class="placeholder-card__image"
-                src="assets/mesa-taller-tabaco.jpg"
-                alt="Mesa de taller con hojas de tabaco, herramientas y detalles de artesanía cubana"
-              />
-            </article>
-          </div>
-        </section>
-
-        <section class="benefits section">
-          <div class="section-intro">
-            <h2>Por qué elegir los Habanos de Don Alejandro</h2>
-          </div>
-          <div class="benefits-grid">
-            <article class="benefit-card">
-              <h3>Hechos a mano</h3>
-              <p>Cada puro se elabora con paciencia y precisión.</p>
-            </article>
-            <article class="benefit-card">
-              <h3>Tradición cubana</h3>
-              <p>Métodos familiares usados durante generaciones.</p>
-            </article>
-            <article class="benefit-card">
-              <h3>Sabor auténtico</h3>
-              <p>Tabaco seleccionado para una experiencia profunda.</p>
-            </article>
-            <article class="benefit-card">
-              <h3>Edición limitada</h3>
-              <p>No es producción masiva.</p>
-            </article>
-            <article class="benefit-card">
-              <h3>Garantía personal</h3>
-              <p>Don Alejandro supervisa cada detalle.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="advice section">
-          <div class="section-intro">
-            <h2>Consejos de Don Alejandro</h2>
-          </div>
-          <div class="advice-list">
-            <blockquote>
-              “No fumes con prisa. Un buen puro se disfruta lentamente.”
-            </blockquote>
-            <blockquote>
-              “Guarda tus puros en un lugar fresco, lejos del sol directo.”
-            </blockquote>
-            <blockquote>“No cortes demasiado la punta del puro.”</blockquote>
-            <blockquote>
-              “Acompáñalo con café, ron o una conversación tranquila.”
-            </blockquote>
-          </div>
-        </section>
-
-        <section class="offer section" id="reserva">
-          <div class="offer__content">
-            <div class="offer__badge">50% OFF</div>
-            <h2>Oferta especial por tiempo limitado</h2>
-            <p>
-              Hoy puedes reservar tu caja de Habanos artesanales por solo $49
-              en lugar de $98.
-            </p>
-            <a class="button button--secondary" href="#lead-form">
-              Quiero reservar mi caja
-            </a>
-          </div>
-
-          <div class="form-card">
-            <form id="lead-form" novalidate>
-              <h3>Reserva tu solicitud</h3>
-
-              <label class="field">
-                <span>Nombre y apellido</span>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  placeholder="Tu nombre completo"
-                  required
-                />
-                <small class="field__error" id="name-error"></small>
-              </label>
-
-              <label class="field">
-                <span>Teléfono / WhatsApp</span>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  autocomplete="tel"
-                  placeholder="+34 600 000 000"
-                  inputmode="tel"
-                  required
-                />
-                <small class="field__error" id="phone-error"></small>
-              </label>
-
-              <label class="checkbox">
-                <input id="consent" name="consent" type="checkbox" required />
-                <span>
-                  Acepto ser contactado por teléfono o WhatsApp para recibir
-                  información sobre mi solicitud.
-                </span>
-              </label>
-              <small class="field__error" id="consent-error"></small>
-
-              <button class="button button--primary button--full" type="submit">
-                Enviar solicitud
-              </button>
-
-              <p class="form-card__note">
-                Después de enviar la solicitud, nuestro equipo se pondrá en
-                contacto contigo para confirmar los detalles.
-              </p>
-              <p class="form-card__disclaimer">
-                Producto destinado únicamente a mayores de edad. El consumo de
-                tabaco es perjudicial para la salud.
-              </p>
-              <p class="form-card__success" id="form-success" role="status"></p>
-            </form>
-          </div>
-        </section>
-
-        <section class="signature section">
-          <div class="signature__media">
-            <!-- Reemplaza esta imagen por el retrato final que prefieras para el cierre. -->
+        <div class="connection__visual reveal">
+          <figure>
             <img
               src="assets/don-alejandro-portrait.jpg"
-              alt="Retrato de Don Alejandro Mendoza Rodríguez sosteniendo un puro artesanal"
+              alt="Don Alejandro portrait"
+              loading="lazy"
             />
+            <figcaption>Don Alejandro, Cuba</figcaption>
+          </figure>
+          <div class="connection-line" aria-hidden="true">
+            <span>Cuba</span>
+            <i></i>
+            <span>Russia</span>
           </div>
-          <div class="signature__copy">
-            <p class="signature__quote">
-              “Amigo, el buen tabaco no entiende de prisas. Cada puro lleva
-              tiempo, paciencia y tradición. Si quieres conocer el verdadero
-              sabor de Cuba, esta es tu oportunidad.”
+          <figure>
+            <img
+              src="assets/sergey-volkov-portrait.jpg"
+              alt="Sergey Volkov portrait"
+              loading="lazy"
+            />
+            <figcaption>Sergey Volkov, Russia</figcaption>
+          </figure>
+        </div>
+
+        <div class="connection__copy reveal">
+          <p>
+            Don Alejandro lives in Cuba and has dedicated his life to tobacco
+            culture. For decades he has worked closely with tobacco growers,
+            cigar craftsmen and the Cuban cigar industry.
+          </p>
+          <p>
+            Sergey receives knowledge, recommendations and product selection
+            assistance directly from Don Alejandro. This unique partnership
+            creates a bridge between Cuba and Russia: Cuban expertise, Russian
+            standards, and a shared respect for heritage.
+          </p>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-heading reveal">
+          <p class="section-label">The Habanos Experience</p>
+          <h2>Handcrafted Cuban character, selected with collector-level care.</h2>
+        </div>
+
+        <div class="product-gallery reveal" aria-label="Habanos product gallery">
+          <figure class="product-shot product-shot--large">
+            <img
+              src="assets/habanos-box-rum-flag.jpg"
+              alt="Open box of Cuban Habanos with rum and Cuban flag"
+              loading="lazy"
+            />
+            <figcaption>Open cigar box</figcaption>
+          </figure>
+          <figure class="product-shot">
+            <img
+              src="assets/cigar-table-havana.jpg"
+              alt="Individual Cuban cigars on a warm wooden table"
+              loading="lazy"
+            />
+            <figcaption>Individual cigars</figcaption>
+          </figure>
+          <figure class="product-shot">
+            <img
+              src="assets/cuban-tobacco-leaves.jpg"
+              alt="Premium Cuban tobacco leaves close up"
+              loading="lazy"
+            />
+            <figcaption>Tobacco leaves</figcaption>
+          </figure>
+          <figure class="product-shot">
+            <img
+              src="assets/cuban-workshop-table.jpg"
+              alt="Cuban tobacco workshop table with tools and leaves"
+              loading="lazy"
+            />
+            <figcaption>Cuban workshop</figcaption>
+          </figure>
+          <figure class="product-shot">
+            <img
+              src="assets/caja-habanos-abierta.jpg"
+              alt="Premium cigar box presentation"
+              loading="lazy"
+            />
+            <figcaption>Closed box presentation</figcaption>
+          </figure>
+        </div>
+
+        <div class="experience-copy reveal">
+          <p>
+            Authentic Cuban Habanos cigars are handcrafted using traditional
+            methods passed through generations. Every cigar is produced using
+            carefully selected Cuban tobacco leaves.
+          </p>
+          <p>
+            The result is rich flavor, smooth draw and the unmistakable
+            experience that has made Cuban cigars legendary worldwide.
+          </p>
+        </div>
+
+        <div class="benefit-grid reveal">
+          <article>100% Cuban Tobacco</article>
+          <article>Handcrafted Production</article>
+          <article>Premium Aging Process</article>
+          <article>Authentic Cuban Heritage</article>
+          <article>Expert Selected</article>
+          <article>Collector Quality</article>
+        </div>
+      </section>
+
+      <section class="section why">
+        <div class="section-heading reveal">
+          <p class="section-label">Why People Love Habanos</p>
+          <h2>A cigar that turns a quiet evening into an occasion.</h2>
+        </div>
+        <div class="icon-card-grid reveal">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>Exceptional craftsmanship</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>Rich aroma profile</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>Traditional Cuban production</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">04</span>
+            <h3>Perfect for celebrations</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">05</span>
+            <h3>Premium gifting option</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">06</span>
+            <h3>Recognized worldwide</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading reveal">
+          <p class="section-label">Private Client Notes</p>
+          <h2>Trusted by Russian enthusiasts who value provenance.</h2>
+        </div>
+
+        <div class="testimonial-grid reveal">
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80"
+              alt="Dmitry Sokolov"
+              loading="lazy"
+            />
+            <div>
+              <h3>Dmitry Sokolov</h3>
+              <span>Moscow</span>
+              <p>
+                "Sergey's selection feels different: calm, precise and clearly
+                guided by real Cuban experience."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=240&q=80"
+              alt="Anton Belov"
+              loading="lazy"
+            />
+            <div>
+              <h3>Anton Belov</h3>
+              <span>Saint Petersburg</span>
+              <p>
+                "I ordered for a private dinner. The box presentation and aroma
+                made the evening immediately memorable."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=240&q=80"
+              alt="Elena Morozova"
+              loading="lazy"
+            />
+            <div>
+              <h3>Elena Morozova</h3>
+              <span>Kazan</span>
+              <p>
+                "A premium gift for my husband. The guidance on storage and
+                pairing was as valuable as the cigars."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=240&q=80"
+              alt="Mikhail Orlov"
+              loading="lazy"
+            />
+            <div>
+              <h3>Mikhail Orlov</h3>
+              <span>Sochi</span>
+              <p>
+                "Smooth draw, deep tobacco character and no retail noise. It
+                feels like being invited into a private cigar circle."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=240&q=80"
+              alt="Pavel Andreev"
+              loading="lazy"
+            />
+            <div>
+              <h3>Pavel Andreev</h3>
+              <span>Nizhny Novgorod</span>
+              <p>
+                "Sergey explained what to choose, how to light it and how to
+                enjoy it. That expert attention matters."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=240&q=80"
+              alt="Irina Volkova"
+              loading="lazy"
+            />
+            <div>
+              <h3>Irina Volkova</h3>
+              <span>Yekaterinburg</span>
+              <p>
+                "The story behind Sergey and Don Alejandro gives the purchase
+                real soul. Beautifully selected."
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education">
+        <div class="section-heading reveal">
+          <p class="section-label">Advice From Sergey</p>
+          <h2>Small rituals that protect the pleasure of a fine cigar.</h2>
+        </div>
+
+        <div class="education-grid reveal">
+          <article>
+            <span aria-hidden="true">Humidity</span>
+            <h3>How to store cigars</h3>
+            <p>
+              Keep them away from heat, sunlight and dry air. Stable humidity is
+              what preserves the wrapper, aroma and draw.
             </p>
-            <p class="signature__name">— Don Alejandro Mendoza Rodríguez</p>
+          </article>
+          <article>
+            <span aria-hidden="true">Flame</span>
+            <h3>How to light a cigar properly</h3>
+            <p>
+              Toast the foot slowly before drawing. Let the heat prepare the
+              tobacco instead of burning it aggressively.
+            </p>
+          </article>
+          <article>
+            <span aria-hidden="true">Tempo</span>
+            <h3>How to enjoy a cigar slowly</h3>
+            <p>
+              A Habanos is not rushed. Pause between draws and let the flavor
+              open in stages.
+            </p>
+          </article>
+          <article>
+            <span aria-hidden="true">Pairing</span>
+            <h3>Best drink pairings</h3>
+            <p>
+              Aged rum, espresso, cognac and dark tea can complement Cuban
+              tobacco without overwhelming it.
+            </p>
+          </article>
+          <article>
+            <span aria-hidden="true">Mistakes</span>
+            <h3>Common beginner mistakes</h3>
+            <p>
+              Over-cutting, overheating and smoking too quickly flatten the
+              experience. Good cigars reward restraint.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="limited-offer" aria-labelledby="offer-title">
+        <div class="limited-offer__image reveal">
+          <img
+            src="assets/sergey-alejandro-moscow.jpg"
+            alt="Sergey Volkov and Don Alejandro with Habanos box in Moscow"
+            loading="lazy"
+          />
+        </div>
+        <div class="limited-offer__content reveal">
+          <h2 id="offer-title">50% Off Today Only</h2>
+          <div class="big-price" aria-label="Price comparison">
+            <span>Regular Price: <s>$98</s></span>
+            <strong>Today: $49</strong>
           </div>
-        </section>
-      </main>
-    </div>
+          <p>
+            This allocation is limited because each box is personally reviewed
+            and recommended through Sergey's Cuban network.
+          </p>
+          <a class="button button--gold" href="#reserve">Reserve Your Box</a>
+        </div>
+      </section>
+
+      <section class="reserve-section" id="reserve" aria-labelledby="reserve-title">
+        <div class="reserve-copy reveal">
+          <p class="section-label">Reserve Your Box</p>
+          <h2 id="reserve-title">Leave your details and our specialist will contact you shortly.</h2>
+          <p>
+            Submit your full name and phone number. A specialist will confirm
+            availability, answer your questions and guide you through the next
+            step.
+          </p>
+        </div>
+
+        <form class="lead-form reveal" id="lead-form" novalidate>
+          <label class="field" for="full-name">
+            <span>Full Name</span>
+            <input
+              id="full-name"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="Sergey Ivanov"
+              required
+            />
+            <small id="name-error" class="field-error"></small>
+          </label>
+
+          <label class="field" for="phone">
+            <span>Phone Number</span>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="+7 900 000 00 00"
+              required
+            />
+            <small id="phone-error" class="field-error"></small>
+          </label>
+
+          <button class="button button--gold button--full" type="submit">
+            Get My Habanos
+          </button>
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+          <p class="form-note">
+            Adults only. Tobacco products are intended for responsible adult
+            consumers where permitted by local law.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Sergey Volkov</strong>
+        <span>Authentic Cuban Cigars</span>
+      </div>
+      <div>Russia × Cuba</div>
+      <div>Premium Cigar Culture</div>
+    </footer>
+
+    <a class="mobile-sticky-cta" href="#reserve">Reserve Your Box · $49</a>
 
     <script src="script.js"></script>
   </body>
